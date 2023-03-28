@@ -1,7 +1,7 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/navbar';
-import LeftMenu from './Components/menu';
+import Menu from './Components/menu';
 import Footer from './Components/footer';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Navbar />
         <main>
-          <LeftMenu />
+          <Menu />
         </main>
         <Footer />
       </Router>

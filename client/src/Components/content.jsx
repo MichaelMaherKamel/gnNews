@@ -14,7 +14,9 @@ import {
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { useState, useEffect } from 'react';
 import changeView from '../Redux/Actions/viewActions';
+import axios from 'axios';
 
 const data = [
   {
