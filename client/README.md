@@ -4,6 +4,10 @@
 
 ## Available Scripts
 
+First you will need to install npm:
+
+### npm init
+
 In the project directory, you can run:
 
 ### `npm start`
