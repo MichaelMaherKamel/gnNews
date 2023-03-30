@@ -1,8 +1,10 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/navbar';
-import Menu from './Components/menu';
+import homePage from './Screens/HomeScreen';
+
 import Footer from './Components/footer';
+import Main from './Components/main';
 
 function App() {
   return (
@@ -10,7 +12,7 @@ function App() {
       <Router>
         <Navbar />
         <main>
-          <Menu />
+          <Main />
         </main>
         <Footer />
       </Router>
