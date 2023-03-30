@@ -38,7 +38,7 @@ const Menu = () => {
   return (
     <Box width='200px' height='88vh' backgroundColor='gray.200' padding={4} overflowY='scroll'>
       <Center mt={4}>
-        <Box fontWeight='bold'>Choose a Country</Box>
+        <Box fontWeight='bold'>Countries</Box>
       </Center>
       <VStack mt={8} justify={'left'}>
         <List spacing={3}>
