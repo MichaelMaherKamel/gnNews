@@ -31,10 +31,6 @@ const Menu = () => {
 
   const dispatch = useDispatch();
 
-  // const setCountry = () => {
-  //   dispatch(changeCountry(country.cca2));
-  // };
-
   return (
     <Box width='200px' height='88vh' backgroundColor='gray.200' padding={4} overflowY='scroll'>
       <Center mt={4}>
@@ -42,13 +38,13 @@ const Menu = () => {
       </Center>
       <VStack mt={8} justify={'left'}>
         <List spacing={3}>
-          {countries.slice(1, 30).map((country) => (
+          {countries.map((country) => (
             <ListItem>
               <LinkBox key={country.name.common}>
                 <HStack>
                   <LinkOverlay
                     as={ReactLink}
-                    to={`/country/${country.cca2}`}
+                    to={`/countries/${country.cca2}`}
                     onClick={() => {
                       dispatch(changeCountry(country.cca2));
                     }}

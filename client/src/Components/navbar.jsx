@@ -47,10 +47,10 @@ const Navbar = () => {
           <ModalHeader>Hi 😃</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Text>For me the hardest part about the project is setting the Redux store.</Text>
             <Text>
-              However the Redux is still 😆 the best part as it's my first time to fully implemtn it's idea from A to Z.
+              For me the hardest part about the project is trying to use 2 APIs and sync data based on one anohter.
             </Text>
+            <Text>The best part of this Project is that I enjoyed it and learned many stuff while doing it 💌</Text>
           </ModalBody>
           <ModalFooter>
             <Button colorScheme='blue' mr={3} onClick={onClose}>

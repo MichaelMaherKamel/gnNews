@@ -1,20 +1,20 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/navbar';
-import homePage from './Screens/HomeScreen';
-
-import Footer from './Components/footer';
-import Main from './Components/main';
+import HomeScreen from './Screens/HomeScreen';
+import CountryScreen from './Screens/CountryScreen';
 
 function App() {
   return (
     <ChakraProvider resetCSS>
       <Router>
-        <Navbar />
         <main>
-          <Main />
+          <Routes>
+            <Route path='/' element={<HomeScreen />} />
+            <Route path='/countries' element={<CountryScreen />}>
+              <Route path='/countries/:country' element={<CountryScreen />} />
+            </Route>
+          </Routes>
         </main>
-        <Footer />
       </Router>
     </ChakraProvider>
   );
